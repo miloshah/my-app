@@ -4,7 +4,8 @@ import numeral from "numeral";
 
 function Table({countries}) {
     return (
-        <table className="table">
+        <div className="table_wrapper">
+            <table className="table">
             <tbody>
             {
                 countries.map(({country,cases},index) => (
@@ -16,6 +17,7 @@ function Table({countries}) {
             }
             </tbody>
         </table>
+        </div>
     )
 }
 
